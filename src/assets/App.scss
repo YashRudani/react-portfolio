@@ -1,0 +1,24 @@
+@import 'materialize-css/sass/components/color';
+$primary-color: color("blue-grey", "base") !default;
+$primary-color-light: lighten($primary-color, 15%) !default;
+$primary-color-dark: darken($primary-color, 15%) !default;
+
+$secondary-color: color("cyan", "lighten-2") !default;
+$input-success-color: color("green", "base") !default;
+$input-error-color: color("red", "base") !default;
+$link-color: color("blue", "darken-3") !default;
+
+$sidenav-font-color: $secondary-color !default;
+
+$dropdown-bg-color: #fff !default;
+$dropdown-hover-bg-color: #eee !default;
+$dropdown-color: $secondary-color !default;
+
+@import 'materialize-css/sass/materialize.scss';
+
+$background-color-dark: color("grey", "lighten-2");
+$background-color-light: color("grey", "lighten-4");
+
+body {
+  background-color: $background-color-light;
+}
