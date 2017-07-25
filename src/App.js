@@ -1,16 +1,22 @@
 import React, { Component } from 'react';
+import {BrowserRouter, Switch, Route} from 'react-router-dom';
 import Navbar from './components/navbar';
+import Home from './components/home';
 import './assets/App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Navbar />
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Navbar />
+          <div class="container">
+            <Switch>
+              <Route exact path='/' component={Home} />
+            </Switch>
+          </div>
+        </div>
+      </BrowserRouter>
     );
   }
 }
