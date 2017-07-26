@@ -27,6 +27,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   color: $secondary-color-dark;
+  font-weight: 500;
 }
 
 nav {
@@ -71,6 +72,10 @@ nav {
       height: 64px;
     }
     height: 56px;
+  }
+  .material-icons.md-36 {
+    font-size: 36px;
+    color: $secondary-color-dark;
   }
 }
 
