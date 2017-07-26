@@ -29,7 +29,7 @@ export default class Navbar extends Component {
 
   handleOutsideClick(e) {
     // ignore clicks on the component itself
-    if (this.node.contains(e.target)) {
+    if ((this.node.contains(e.target)) || !this.state.menuActive) {
       return;
     }
 
@@ -44,8 +44,22 @@ export default class Navbar extends Component {
                       </div>
     let infoList = <ul className='right'>
                      <li><Link to="/"><i className="material-icons md-36">home</i></Link></li>
-                     <li><a href="https://github.com/davisk4rpi" target="_blank" rel="noopener noreferrer" className=""><img src={linkedinIcon} alt="LinkedIn" className="social-media" /></a></li>
-                     <li><a href="https://www.linkedin.com/in/kieran-davis/" target="_blank" rel="noopener noreferrer" className=""><img src={githubIcon} alt="GitHub" className="social-media"/></a></li>
+                     <li>
+                       <a href="https://github.com/davisk4rpi"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="">
+                         <img src={linkedinIcon} alt="LinkedIn" className="social-media" />
+                       </a>
+                     </li>
+                     <li>
+                       <a href="https://www.linkedin.com/in/kieran-davis/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="">
+                        <img src={githubIcon} alt="GitHub" className="social-media"/>
+                       </a>
+                     </li>
                    </ul>
 
     let menu;
