@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import headshot from '../assets/img/headshot.png';
 
 export default class Home extends Component {
   render() {
@@ -26,7 +27,7 @@ export default class Home extends Component {
         </div>
         <div className="row flex-center">
           <div className="col s10 offset-s1 m8 offset-m2 l6">
-            <img src="http://via.placeholder.com/500x500" alt="Kieran's Headshot" id="headshot-img" className="responsive-img"/>
+            <img src={headshot} alt="Kieran's Headshot" id="headshot-img" className="responsive-img"/>
           </div>
           <div className="col s12 l6">
             <h2 className="center-align">Who Am I?</h2>
