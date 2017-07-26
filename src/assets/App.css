@@ -8612,3 +8612,6 @@ nav {
   background-color: #e0e0e0;
   color: #1a8b99;
   margin: 5px; }
+
+.work-img {
+  max-width: 100%; }

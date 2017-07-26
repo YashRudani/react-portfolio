@@ -7,6 +7,7 @@ import { railsPage } from './components/data/rails-page';
 import { usabilityPage } from './components/data/usability-page';
 import { manufacturingPage } from './components/data/manufacturing-page';
 import WorkPageContainer from './components/work_page_container';
+
 import './assets/App.css';
 
 class App extends Component {
@@ -23,9 +24,6 @@ class App extends Component {
               <Route path='/rails' render={(props) => (
                 <WorkPageContainer {...props} pageInfo={railsPage} />
               )}/>
-              <Route path='/rails/znc' component={Znc} />
-              <Route path='/rails/portfolio' component={RailsPortfolio} />
-              <Route path='/rails/ruby' component={Ruby} />
               <Route path='/usability' render={(props) => (
                 <WorkPageContainer {...props} pageInfo={usabilityPage} />
               )}/>
