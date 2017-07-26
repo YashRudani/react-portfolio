@@ -3574,7 +3574,7 @@ a {
   text-decoration: none;
   -webkit-tap-highlight-color: transparent; }
 
-.valign-wrapper {
+.valign-wrapper, .nav-wrapper a {
   display: flex;
   align-items: center; }
 
@@ -8537,11 +8537,25 @@ nav {
     font-size: 1.5rem;
     margin-top: -5px; }
 
+.social-media {
+  display: inline-block;
+  width: 36px;
+  border-radius: 5px;
+  margin: auto 8px; }
+
+.nav-wrapper a {
+  height: 56px; }
+  @media only screen and (min-width: 601px) {
+    .nav-wrapper a {
+      height: 64px; } }
+
 #menu-btn {
   display: inline-block; }
   #menu-btn i {
     color: #1a8b99;
     line-height: inherit; }
+  #menu-btn button {
+    margin-left: 10px; }
 
 .dropdown-menu {
   position: absolute;

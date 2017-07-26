@@ -1,6 +1,8 @@
 import React , {Component} from 'react';
 import {Link} from 'react-router-dom';
 import { CSSTransitionGroup } from 'react-transition-group';
+import githubIcon from '../assets/img/icons/Github.svg'
+import linkedinIcon from '../assets/img/icons/Linkedin.svg'
 
 export default class Navbar extends Component {
   constructor(props) {
@@ -40,18 +42,16 @@ export default class Navbar extends Component {
                         <li><Link to="/">Ruby-on-Rails</Link></li>
                         <li><Link to="/">Composites Manufacturing</Link></li>
                       </div>
-    let infoList = <div>
-                     <li><a>LinkedIn</a></li>
-                     <li><Link to="/">GitHub</Link></li>
-                     <li><Link to="/">About Me</Link></li>
-                   </div>
+    let infoList = <ul className='right'>
+                     <li><a href="https://github.com/davisk4rpi" target="_blank" className=""><img src={linkedinIcon} alt="LinkedIn" className="social-media" /></a></li>
+                     <li><a href="https://www.linkedin.com/in/kieran-davis/" target="_blank" className=""><img src={githubIcon} alt="GitHub" className="social-media"/></a></li>
+                   </ul>
 
     let menu;
     if(this.state.menuActive) {
       menu = <div className="dropdown-menu flow-text">
                <ul>
                  {projectList}
-                 {infoList}
                </ul>
               </div>
     } else {
@@ -63,16 +63,14 @@ export default class Navbar extends Component {
         <nav ref={node => { this.node = node; }}>
           <div className="nav-wrapper">
             <div id="menu-btn">
-              <a onClick = {this.toggleMenu} className="hide-on-large-only btn-flat center-align">
+              <button onClick = {this.toggleMenu} className="hide-on-large-only btn-flat center-align">
                 <i className="material-icons">menu</i>
-              </a>
+              </button>
             </div>
             <ul id="nav-mobile" className="left hide-on-med-and-down">
               {projectList}
             </ul>
-            <ul className="right hide-on-med-and-down">
-              {infoList}
-            </ul>
+            {infoList}
           </div>
         </nav>
         <CSSTransitionGroup

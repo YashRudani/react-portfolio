@@ -56,13 +56,34 @@ nav {
     margin-top: -5px;
   }
 }
+
+.social-media {
+  display: inline-block;
+  width: 36px;
+  border-radius: 5px;
+  margin: auto 8px;
+}
+
+.nav-wrapper {
+  a {
+    @extend .valign-wrapper;
+    @media #{$medium-and-up} {
+      height: 64px;
+    }
+    height: 56px;
+  }
+}
+
 // Menu Transitions
 #menu-btn {
   display: inline-block;
- i {
+  i {
    color: $secondary-color-dark;
    line-height: inherit;
- }
+  }
+  button {
+    margin-left: 10px;
+  }
 }
 
 .dropdown-menu {
