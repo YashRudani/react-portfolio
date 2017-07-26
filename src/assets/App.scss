@@ -60,16 +60,17 @@ nav {
 #menu-btn {
   display: inline-block;
  i {
-   color: #fff;
+   color: $secondary-color-dark;
    line-height: inherit;
  }
 }
 
 .dropdown-menu {
+  position: absolute;
   background-color: $background-color-dark;
   width: 300px;
   margin-top: 10px;
-  margin-left: 10px;
+  left: 10px;
   @media #{$small-and-down} {
     margin: auto;
     margin-top: 10px;
