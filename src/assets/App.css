@@ -8607,3 +8607,8 @@ nav {
   .flex-center {
     display: flex;
     align-items: center; } }
+
+#work-header .btn-flat {
+  background-color: #e0e0e0;
+  color: #1a8b99;
+  margin: 5px; }
