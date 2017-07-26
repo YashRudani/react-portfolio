@@ -1,9 +1,30 @@
 import React, { Component } from 'react';
+import Lightbox from 'react-image-lightbox';
 import zncLogo from '../assets/img/work/znc-logo.png';
 import zncSite from '../assets/img/work/znc-website.png';
 
 export default class Znc extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isOpen: false,
+      currentImg: ''
+    };
+  }
+
+  pickLightbox(img) {
+    this.setState({
+      isOpen: true,
+      currentImg: img
+    })
+  }
+
   render() {
+    const images = {
+      "zncSite": zncSite,
+      "zncLogo": zncLogo
+    }
+    let { isOpen, currentImg } = this.state;
     return (
       <section id="znc">
         <h5>Zuzek & Company (ZNC) Website</h5>
@@ -14,7 +35,7 @@ export default class Znc extends Component {
         </a>
         <div className="row">
           <div className="col s8 offset-s2 m4">
-            <img src={zncLogo} alt="ZNC-Logo" className="work-img"/>
+            <img src={zncLogo} alt="ZNC-Logo" className="work-img" onClick={() => this.pickLightbox("zncLogo")}/>
           </div>
           <div className="col s12 m8">
             <h6>Introduction</h6>
@@ -31,7 +52,7 @@ export default class Znc extends Component {
         </div>
         <div className="row">
           <div className="col s8 offset-s2 m4">
-            <img src={zncSite} alt="ZNC-Website" className="work-img"/>
+            <img src={zncSite} alt="ZNC-Website" className="work-img" onClick={() => this.pickLightbox("zncSite")}/>
           </div>
           <div className="col s12 m8">
             <h6>Technology Used for this Project</h6>
@@ -46,6 +67,11 @@ export default class Znc extends Component {
             </p>
           </div>
         </div>
+        {isOpen &&
+          <Lightbox
+            mainSrc={images[currentImg]}
+            onCloseRequest={() => this.setState({ isOpen: false })}/>
+          }
       </section>
     );
   }
