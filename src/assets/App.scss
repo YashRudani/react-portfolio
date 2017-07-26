@@ -23,6 +23,7 @@ body {
   background-color: $background-color-light;
 }
 
+// Navigation
 .brand-logo {
   line-height: normal;
   div {
@@ -31,11 +32,52 @@ body {
     margin-top: -5px;
   }
 }
-
+// Menu Transitions
 #menu-btn {
   display: inline-block;
  i {
    color: #fff;
    line-height: inherit;
  }
+}
+
+.dropdown-menu {
+  background-color: $background-color-dark;
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 10px;
+  @media #{$small-and-down} {
+    margin: auto;
+    margin-top: 10px;
+  }
+  ul {
+    margin-top: 0px;
+    li {
+      padding: 10px;
+      @extend .hoverable;
+      a {
+        color: color("cyan", "darken-2");
+      }
+    }
+
+  }
+}
+
+.menu-enter {
+  max-height: 0px;
+  overflow: hidden;
+}
+.menu-enter-active {
+  max-height: 200px;
+  -webkit-transition: max-height .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.menu-leave {
+  opacity: 1;
+}
+.menu-leave-active {
+  opacity: 0.01;
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
 }

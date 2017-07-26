@@ -32,10 +32,12 @@ export default class Navbar extends Component {
 
     let menu;
     if(this.state.menuActive) {
-      menu = <ul>
-               {projectList}
-               {infoList}
-             </ul>
+      menu = <div className="dropdown-menu flow-text">
+               <ul>
+                 {projectList}
+                 {infoList}
+               </ul>
+              </div>
     } else {
       menu = '';
     }
@@ -59,7 +61,7 @@ export default class Navbar extends Component {
         <CSSTransitionGroup
           transitionName="menu"
           transitionEnterTimeout={500}
-          transitionLeaveTimeout={500}
+          transitionLeaveTimeout={250}
           >
           {menu}
         </CSSTransitionGroup>
