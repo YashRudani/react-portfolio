@@ -1,14 +1,14 @@
-export const reactHeader = {
+export const reactPage = {
   title: "React.JS",
   subtitle: "Front-End Development and Deployment of Lightweight Apps",
   buttons: [
     {
       name: "Portfolio",
-      path: "/portfolio"
+      path: "/react/portfolio"
     },
     {
       name: "Gif Search App",
-      path: "/gifs"
+      path: "/react/gifs"
     }
   ]
 }

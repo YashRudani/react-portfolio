@@ -39,8 +39,9 @@ export default class Navbar extends Component {
   render() {
     let projectList = <div>
                         <li><Link to="/react">React.JS</Link></li>
-                        <li><Link to="/rails">Ruby-on-Rails</Link></li>
+                        <li><Link to="/rails">Ruby on Rails</Link></li>
                         <li><Link to="/manufacturing">Composites Manufacturing</Link></li>
+                        <li><Link to="/usability">Usability</Link></li>
                       </div>
     let infoList = <ul className='right'>
                      <li><Link to="/"><i className="material-icons md-36">home</i></Link></li>
