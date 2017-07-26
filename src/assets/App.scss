@@ -29,8 +29,22 @@ h1 {
   color: $secondary-color-dark;
 }
 
+nav {
+  background-color:$background-color-light;
+  ul{
+    a {
+      color: $primary-color;
+      font-weight: 500;
+    }
+  }
+}
+
 .bold {
   font-weight: 400;
+}
+
+.extra-bold {
+  font-weight: 500;
 }
 
 // Navigation
@@ -90,4 +104,21 @@ h1 {
   opacity: 0.01;
   -webkit-transition: all .25s ease-out;
   transition: all .25s ease-out;
+}
+
+// home page
+.skills {
+  margin-bottom: 10px;
+}
+
+#headshot-img {
+  display: block;
+  margin: 0px auto;
+}
+
+@media #{$large-and-up}{
+  .flex-center {
+    display: flex;
+    align-items: center;
+  }
 }

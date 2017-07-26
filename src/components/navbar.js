@@ -49,7 +49,6 @@ export default class Navbar extends Component {
             <div id="menu-btn">
               <a onClick = {this.toggleMenu} className="hide-on-large-only btn-flat center-align"><i className="material-icons">menu</i></a>
             </div>
-            <Link to='/about' className="brand-logo center">Kieran Davis<div>Technologist</div></Link>
             <ul id="nav-mobile" className="left hide-on-med-and-down">
               {projectList}
             </ul>
