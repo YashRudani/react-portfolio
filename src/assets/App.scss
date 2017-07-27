@@ -53,33 +53,42 @@ nav {
 }
 
 // Navigation
-.brand-logo {
-  line-height: normal;
-  div {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: -5px;
-  }
-}
-
-.social-media {
-  display: inline-block;
-  width: 36px;
-  border-radius: 5px;
-  margin: auto 8px;
-}
-
-.nav-wrapper {
-  a {
-    @extend .valign-wrapper;
-    @media #{$medium-and-up} {
-      height: 64px;
+#header {
+  .brand-logo {
+    line-height: normal;
+    div {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-top: -5px;
     }
-    height: 56px;
   }
-  .material-icons.md-36 {
-    font-size: 36px;
-    color: $secondary-color-dark;
+
+  .social-media {
+    display: inline-block;
+    width: 36px;
+    border-radius: 5px;
+    margin: auto 8px;
+  }
+
+  .nav-wrapper {
+    a {
+      @extend .valign-wrapper;
+      @media #{$medium-and-up} {
+        height: 64px;
+      }
+      height: 56px;
+    }
+    .material-icons.md-36 {
+      font-size: 36px;
+      color: $secondary-color-dark;
+    }
+  }
+  .active-nav {
+    background-color: $secondary-color-dark;
+    color: $background-color-light;
+    .material-icons.md-36 {
+      color: $background-color-light;
+    }
   }
 }
 
@@ -108,9 +117,11 @@ nav {
   ul {
     margin-top: 0px;
     li {
-      padding: 10px;
       @extend .hoverable;
       a {
+        display: inline-block;
+        padding: 10px;
+        width: 100%;
         color: $secondary-color-dark;
       }
     }
@@ -161,6 +172,17 @@ nav {
     background-color: $background-color-dark;
     color: $secondary-color-dark;
     margin: 5px;
+    @extend .hoverable;
+    // -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  }
+  .btn-flat.active-btn {
+    color: $background-color-dark;
+    background-color: $secondary-color-dark;
+    -webkit-box-shadow: inset 0px 2px 6px #ccc, inset 2px 0px 6px #ccc;
+          box-shadow: inset 0px 2px 6px #ccc, inset 2px 0px 6px #ccc;
+    // -webkit-box-shadow: inset 0 2px 2px 0 rgba(255,255,255 0.14), inset 0 1px 5px 0 rgba(255,255,255 0.12), inset 0 3px 1px -2px rgba(255,255,255 0.2);
+    // box-shadow: inset 0 2px 2px 0 rgba(255,255,255 0.14), inset 0 1px 5px 0 rgba(255,255,255 0.12), inset 0 3px 1px -2px rgba(255,255,255 0.2);
   }
 }
 

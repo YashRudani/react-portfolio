@@ -6,6 +6,10 @@ import WorkDetails from './work_details';
 import { railsProjects } from './data/rails-page';
 
 export default class WorkPageContainer extends Component {
+  componentWillUpdate(){
+    let root = this.props.match.path;
+    console.log(this.props.match);
+  }
   render() {
     return (
       <div id="work-page">

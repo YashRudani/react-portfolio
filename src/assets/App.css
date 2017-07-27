@@ -3574,7 +3574,7 @@ a {
   text-decoration: none;
   -webkit-tap-highlight-color: transparent; }
 
-.valign-wrapper, .nav-wrapper a {
+.valign-wrapper, #header .nav-wrapper a {
   display: flex;
   align-items: center; }
 
@@ -3602,9 +3602,9 @@ a {
 .z-depth-5 {
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
 
-.hoverable, .dropdown-menu ul li {
+.hoverable, .dropdown-menu ul li, #work-header .btn-flat {
   transition: box-shadow .25s; }
-  .hoverable:hover, .dropdown-menu ul li:hover {
+  .hoverable:hover, .dropdown-menu ul li:hover, #work-header .btn-flat:hover {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .divider {
@@ -8534,28 +8534,34 @@ nav {
 .extra-bold {
   font-weight: 500; }
 
-.brand-logo {
+#header .brand-logo {
   line-height: normal; }
-  .brand-logo div {
+  #header .brand-logo div {
     text-align: center;
     font-size: 1.5rem;
     margin-top: -5px; }
 
-.social-media {
+#header .social-media {
   display: inline-block;
   width: 36px;
   border-radius: 5px;
   margin: auto 8px; }
 
-.nav-wrapper a {
+#header .nav-wrapper a {
   height: 56px; }
   @media only screen and (min-width: 601px) {
-    .nav-wrapper a {
+    #header .nav-wrapper a {
       height: 64px; } }
 
-.nav-wrapper .material-icons.md-36 {
+#header .nav-wrapper .material-icons.md-36 {
   font-size: 36px;
   color: #1a8b99; }
+
+#header .active-nav {
+  background-color: #1a8b99;
+  color: #f5f5f5; }
+  #header .active-nav .material-icons.md-36 {
+    color: #f5f5f5; }
 
 #menu-btn {
   display: inline-block; }
@@ -8577,10 +8583,11 @@ nav {
       margin-top: 10px; } }
   .dropdown-menu ul {
     margin-top: 0px; }
-    .dropdown-menu ul li {
-      padding: 10px; }
-      .dropdown-menu ul li a {
-        color: #1a8b99; }
+    .dropdown-menu ul li a {
+      display: inline-block;
+      padding: 10px;
+      width: 100%;
+      color: #1a8b99; }
 
 .menu-enter {
   max-height: 0px;
@@ -8615,6 +8622,12 @@ nav {
   background-color: #e0e0e0;
   color: #1a8b99;
   margin: 5px; }
+
+#work-header .btn-flat.active-btn {
+  color: #e0e0e0;
+  background-color: #1a8b99;
+  -webkit-box-shadow: inset 0px 2px 6px #ccc, inset 2px 0px 6px #ccc;
+  box-shadow: inset 0px 2px 6px #ccc, inset 2px 0px 6px #ccc; }
 
 .work-img {
   max-height: 200px;

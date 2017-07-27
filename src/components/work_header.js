@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export default class ReactPage extends Component {
 
@@ -8,7 +8,13 @@ export default class ReactPage extends Component {
     const buttonInfo = this.props.details.buttons;
     return _.map(buttonInfo, btn => {
       return (
-        <Link to={btn.path} key={btn.name} className="btn-flat">{btn.name}</Link>
+        <NavLink
+          to={btn.path}
+          activeClassName="active-btn"
+          key={btn.name}
+          className="btn-flat">
+          {btn.name}
+        </NavLink>
       );
     });
   }
@@ -19,7 +25,7 @@ export default class ReactPage extends Component {
       <section id="work-header">
         <h3>{details.title}</h3>
         <h6>{details.subtitle}</h6>
-        <h5>Projects:</h5>
+        <h5>Browse My Projects:</h5>
         <div className="row">
           {this.renderButtons()}
         </div>

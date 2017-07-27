@@ -1,10 +1,10 @@
 import React , {Component} from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink, withRouter} from 'react-router-dom';
 import { CSSTransitionGroup } from 'react-transition-group';
 import githubIcon from '../assets/img/icons/Github.svg'
 import linkedinIcon from '../assets/img/icons/Linkedin.svg'
 
-export default class Navbar extends Component {
+class Navbar extends Component {
   constructor(props) {
     super(props);
     this.toggleMenu = this.toggleMenu.bind(this);
@@ -38,13 +38,13 @@ export default class Navbar extends Component {
 
   render() {
     let projectList = <div>
-                        <li><Link to="/react">React.JS</Link></li>
-                        <li><Link to="/rails">Ruby on Rails</Link></li>
-                        <li><Link to="/manufacturing">Composites Manufacturing</Link></li>
-                        <li><Link to="/usability">Usability</Link></li>
+                        <li><NavLink to="/react" activeClassName="active-nav">React.JS</NavLink></li>
+                        <li><NavLink to="/rails" activeClassName="active-nav">Ruby on Rails</NavLink></li>
+                        <li><NavLink to="/manufacturing" activeClassName="active-nav">Composites Manufacturing</NavLink></li>
+                        <li><NavLink to="/usability" activeClassName="active-nav">Usability</NavLink></li>
                       </div>
     let infoList = <ul className='right'>
-                     <li><Link to="/"><i className="material-icons md-36">home</i></Link></li>
+                     <li><NavLink exact to="/" activeClassName="active-nav"><i className="material-icons md-36">home</i></NavLink></li>
                      <li>
                        <a href="https://github.com/davisk4rpi"
                             target="_blank"
@@ -75,7 +75,7 @@ export default class Navbar extends Component {
     }
 
     return(
-      <header>
+      <header id="header">
         <nav ref={node => { this.node = node; }}>
           <div className="nav-wrapper">
             <div id="menu-btn">
@@ -100,3 +100,5 @@ export default class Navbar extends Component {
     );
   }
 }
+
+export default withRouter(Navbar);
