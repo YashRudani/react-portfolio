@@ -23,7 +23,7 @@ export default class WorkDetails extends Component {
       return (
         <div className="row flex-center" key={section.image.fileName}>
           <div className="col s8 offset-s2 m4">
-            <img src={section.image.file} alt="ZNC-Logo" className="work-img" onClick={() => this.pickLightbox(section.image.fileName)}/>
+            <img src={section.image.file} id={section.image.fileName} alt={section.image.fileName} className="work-img" onClick={() => this.pickLightbox(section.image.fileName)}/>
           </div>
           <div className="col s12 m8">
             <h6>{section.headline}</h6>
