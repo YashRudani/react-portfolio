@@ -2,14 +2,24 @@ import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import WorkHeader from './work_header';
 
-import Znc from './znc';
+import WorkDetails from './work_details';
+import { railsProjects } from './data/rails-page';
 
 export default class WorkPageContainer extends Component {
   render() {
     return (
-      <div id="usability-page">
+      <div id="work-page">
         <WorkHeader details={this.props.pageInfo} />
-        <Route path='/rails/znc' component={Znc} />
+        <hr />
+        <Route path='/rails/znc' render={(props) => (
+          <WorkDetails {...props} project={railsProjects.znc} name="znc" />
+        )}/>
+        <Route path='/rails/portfolio' render={(props) => (
+          <WorkDetails {...props} project={railsProjects.portfolio} name="portfolio" />
+        )}/>
+        <Route path='/rails/ruby' render={(props) => (
+          <WorkDetails {...props} project={railsProjects.ruby} name="ruby" />
+        )}/>
       </div>
 
     );
