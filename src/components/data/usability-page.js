@@ -1,5 +1,10 @@
-import zncLogo from '../../assets/img/work/znc-logo.png';
-import zncSite from '../../assets/img/work/znc-website.png';
+import uw from '../../assets/img/work/registrar/UW_logo.png';
+import before from '../../assets/img/work/registrar/registrar-before.png';
+import research from '../../assets/img/work/registrar/research-overview.png';
+import steven from '../../assets/img/work/registrar/steven-student.png';
+import paper from '../../assets/img/work/registrar/paper-prototype.png';
+import mid from '../../assets/img/work/registrar/mid-fidelity-prototype.png';
+import result from '../../assets/img/work/registrar/final-prototype.png';
 
 export const usabilityPage = {
   title: "User-Centered Design",
@@ -25,37 +30,77 @@ export const usabilityPage = {
   ]
 }
 
-export const railsProjects = {
-  znc:  {
-    headline: "Zuzek & Company (ZNC) Website",
+export const usabilityProjects = {
+  registrar:  {
+    headline: "Office of the Registrar Website Redesign",
     link: "http://www.zuzekandco.com/",
     sections: [
       {
         image: {
-          fileName: 'znc-logo',
-          file: zncLogo
+          fileName: 'UW-Logo',
+          file: uw
         },
-        headline: "Introduction",
+        headline: "Background",
         p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
       },
       {
         image: {
-          fileName: 'znc-site',
-          file: zncSite
+          fileName: 'Before-Image',
+          file: before
         },
-        headline: "Technology Used for this Project",
+        headline: "A Look at the Original Website",
+        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+      },
+      {
+        image: {
+          fileName: 'Research-Overview',
+          file: research
+        },
+        headline: "User Research",
+        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+      },
+      {
+        image: {
+          fileName: 'Persona Example',
+          file: steven
+        },
+        headline: "Generating Personas",
+        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+      },
+      {
+        image: {
+          fileName: 'Paper-Prototype-Image',
+          file: paper
+        },
+        headline: "Design/Paper Prototyping",
+        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+      },
+      {
+        image: {
+          fileName: 'Mid-Fidelity-Image',
+          file: mid
+        },
+        headline: "Initial Digital Prototyping",
+        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+      },
+      {
+        image: {
+          fileName: 'Result-Image',
+          file: result
+        },
+        headline: "The Final Result, a High Fidelity HTML Protoype",
         p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
       }
     ]
   },
-  portfolio:  {
-    headline: "My Previous Portfolio Site",
-    link: "http://www.zuzekandco.com/",
+  laudSocial:  {
+    headline: "Laud Social Usability Studies",
+    link: "http://www.laudsocial.com/",
     sections: [
       {
         image: {
           fileName: 'znc-logo',
-          file: zncLogo
+          file: uw
         },
         headline: "Introduction",
         p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
@@ -63,29 +108,7 @@ export const railsProjects = {
       {
         image: {
           fileName: 'znc-site',
-          file: zncSite
-        },
-        headline: "Technology Used for this Project",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
-      }
-    ]
-  },
-  ruby:  {
-    headline: "Pure Ruby Algorithms & Games",
-    link: "http://www.zuzekandco.com/",
-    sections: [
-      {
-        image: {
-          fileName: 'znc-logo',
-          file: zncLogo
-        },
-        headline: "Introduction",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
-      },
-      {
-        image: {
-          fileName: 'znc-site',
-          file: zncSite
+          file: before
         },
         headline: "Technology Used for this Project",
         p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."

@@ -4,6 +4,7 @@ import WorkHeader from './work_header';
 
 import WorkDetails from './work_details';
 import { railsProjects } from './data/rails-page';
+import { usabilityProjects } from './data/usability-page';
 
 export default class WorkPageContainer extends Component {
   render() {
@@ -19,6 +20,12 @@ export default class WorkPageContainer extends Component {
         )}/>
         <Route path='/rails/ruby' render={(props) => (
           <WorkDetails {...props} project={railsProjects.ruby} name="ruby" />
+        )}/>
+        <Route path='/usability/registrar' render={(props) => (
+          <WorkDetails {...props} project={usabilityProjects.registrar} name="registrar" />
+        )}/>
+        <Route path='/usability/laud_social' render={(props) => (
+          <WorkDetails {...props} project={usabilityProjects.laudSocial} name="laud_social" />
         )}/>
       </div>
 
