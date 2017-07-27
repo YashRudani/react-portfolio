@@ -21,7 +21,7 @@ export default class WorkDetails extends Component {
   renderSections(project) {
     return _.map(project.sections, section => {
       return (
-        <div className="row" key={section.image.fileName}>
+        <div className="row flex-center" key={section.image.fileName}>
           <div className="col s8 offset-s2 m4">
             <img src={section.image.file} alt="ZNC-Logo" className="work-img" onClick={() => this.pickLightbox(section.image.fileName)}/>
           </div>
