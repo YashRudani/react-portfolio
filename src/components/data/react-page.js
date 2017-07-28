@@ -1,5 +1,7 @@
-import reactLogo from '../../assets/img/react-logo.svg';
-import zncSite from '../../assets/img/work/znc-website.png';
+import reactLogo from '../../assets/img/work/react-logo.svg';
+import balsamiq from '../../assets/img/work/balsamiq.png';
+import gifMobile from '../../assets/img/work/gif-mobile.png';
+import reduxLogo from '../../assets/img/work/redux-logo.png';
 
 export const reactPage = {
   rootPath: "react",
@@ -38,12 +40,12 @@ export const reactProjects = {
       },
       {
         image: {
-          fileName: 'znc-site',
-          file: zncSite
+          fileName: 'Balsamiq',
+          file: balsamiq
         },
         headline: "Technology Used for this Project",
         p:[
-          "Balsamiq, React, Create React App, Heroku, React Router V4, Materialize-css, Sass, Webpack"
+          "Balsamiq, React, ES6, Create React App, Heroku, React Router V4, Materialize-css, Sass, Webpack"
         ]
       }
     ]
@@ -63,22 +65,22 @@ export const reactProjects = {
     sections: [
       {
         image: {
-          fileName: 'znc-logo',
-          file: reactLogo
+          fileName: 'Gif-Finder-Mobile',
+          file: gifMobile
         },
         headline: "Introduction",
         p:[
-          "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+          "To demonstrate my proficiency with Redux and handling Asynchronous JavaScript (AJAX) requests, I decided to build this toy app. Using the app, you can search for a new gif in realtime using the search bar at the top. Once you have decided on a search term, you can click the button at the button to fetch a new gif using that term. If you decided you want to see a gif from earlier you can use the back button to retrieve your history. Please have some fun playing around with it."
         ]
       },
       {
         image: {
-          fileName: 'znc-site',
-          file: zncSite
+          fileName: 'Redux-Logo',
+          file: reduxLogo
         },
         headline: "Technology Used for this Project",
         p:[
-          "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+          "React, Redux, React Router V4, ES6, GIHPY API, Axios, Redux-Thunk, Webpack, Heroku"
         ]
       }
     ]

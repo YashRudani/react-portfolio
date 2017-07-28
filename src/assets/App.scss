@@ -168,6 +168,15 @@ nav {
   }
 }
 
+#home-page {
+  .btn-flat {
+    background-color: $background-color-dark;
+    color: $secondary-color-dark;
+    margin: 5px;
+    @extend .hoverable;
+  }
+}
+
 // Work pages
 
 #work-header {
@@ -176,16 +185,12 @@ nav {
     color: $secondary-color-dark;
     margin: 5px;
     @extend .hoverable;
-    // -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-    // box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
   }
   .btn-flat.active-btn {
     color: $background-color-dark;
     background-color: $secondary-color-dark;
     -webkit-box-shadow: inset 0px 2px 6px #ccc, inset 2px 0px 6px #ccc;
           box-shadow: inset 0px 2px 6px #ccc, inset 2px 0px 6px #ccc;
-    // -webkit-box-shadow: inset 0 2px 2px 0 rgba(255,255,255 0.14), inset 0 1px 5px 0 rgba(255,255,255 0.12), inset 0 3px 1px -2px rgba(255,255,255 0.2);
-    // box-shadow: inset 0 2px 2px 0 rgba(255,255,255 0.14), inset 0 1px 5px 0 rgba(255,255,255 0.12), inset 0 3px 1px -2px rgba(255,255,255 0.2);
   }
 }
 

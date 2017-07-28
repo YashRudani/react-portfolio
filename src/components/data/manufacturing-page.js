@@ -1,5 +1,5 @@
-import zncLogo from '../../assets/img/work/znc-logo.png';
-import zncSite from '../../assets/img/work/znc-website.png';
+import boeingLogo from '../../assets/img/work/boeing/boeing_logo.png';
+import plane from '../../assets/img/work/boeing/plane-dwg.png';
 
 export const manufacturingPage = {
   rootPath: "manufacturing",
@@ -23,32 +23,19 @@ export const manufacturingPage = {
 
 export const manufacturingProjects = {
   "python":  {
-    headline: "Zuzek & Company (ZNC) Website",
-    links: [
-      {
-        link: "http://www.zuzekandco.com/",
-        linkName: "Check out the live website"
-      }
-    ],
+    headline: "Efficient Data Crunching with Python",
+    links: [],
     sections: [
       {
         image: {
-          fileName: 'znc-logo',
-          file: zncLogo
+          fileName: 'Boeing-Logo',
+          file: boeingLogo
         },
-        headline: "Introduction",
+        headline: "Working Python into my work responsibilities",
         p:[
-
-        ]
-      },
-      {
-        image: {
-          fileName: 'znc-site',
-          file: zncSite
-        },
-        headline: "Technology Used for this Project",
-        p:[
-
+          "I began teaching myself Python to transition into web development. I quickly realized that I could take what I was learning and apply it to my day job. I began by automating data crunching tasks that previously I had to do 'by hand' in Excel. Soon I was coding everyday building apps to support my team's work.",
+          "I designed and implemented python program eliminating 100s of hours of repetitive labor processing csv files. Built a GUI and froze the code as .exe to allow for use on all lab computers.",
+          "I also designed and built a web based calculator for drill motor component parts. Used HTML/CSS and Javascript/jQuery UI to create a simple and clear interface for shop use."
         ]
       }
     ]
@@ -57,62 +44,38 @@ export const manufacturingProjects = {
     headline: "My Previous Portfolio Site",
     links: [
       {
-        link: "http://www.zuzekandco.com/",
-        linkName: "Check out the live website"
+        link: "http://www.boeing.com/",
+        linkName: "www.boeing.com"
       }
     ],
     sections: [
       {
         image: {
-          fileName: 'znc-logo',
-          file: zncLogo
+          fileName: 'boeing-logo',
+          file: boeingLogo
         },
-        headline: "Introduction",
+        headline: "Program Management",
         p:[
-          "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+          "Managed a team of 8 engineers and technicians developing a robotic extrusion process. Coordinated with multiple teams and the key stakeholders to set proper milestones to ultimately prove technology readiness for production.",
+          "Lead Lab Optimization Team to develop and institute lean practices such as using visual controls to reduce overhead associated with consumable material resupply. Also implemented user friendly procedures for clean-as-you-go resulting in better lab space utilization and nearly eliminating lab maintenance overhead.",
+          "Managed a team of 6 senior engineers on a $16M full scale manufacturing demonstration which we completed on time despite starting a month later than expected and late additions of new features by the customer."
         ]
       },
       {
         image: {
-          fileName: 'znc-site',
-          file: zncSite
+          fileName: 'Plane-Diagram',
+          file: plane
         },
-        headline: "Technology Used for this Project",
+        headline: "Manufacturing Design",
         p:[
-          "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+          "Designed and developed new technologies that resulted in 6 submissions to the US Patent Office (1 awarded 5 pending) and 7 Boeing invention awards.",
+          "Designed processes and equipment spanning multiple technology domains from material handling and manipulation to robotics and additive manufacturing.",
+          "Used Solidworks to design dozens of 3D printed parts to be used on production equipment and various research projects."
         ]
       }
     ]
   },
   "patents":  {
-    headline: "Pure Ruby Algorithms & Games",
-    links: [
-      {
-        link: "http://www.zuzekandco.com/",
-        linkName: "Check out the live website"
-      }
-    ],
-    sections: [
-      {
-        image: {
-          fileName: 'znc-logo',
-          file: zncLogo
-        },
-        headline: "Introduction",
-        p:[
-          "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
-        ]
-      },
-      {
-        image: {
-          fileName: 'znc-site',
-          file: zncSite
-        },
-        headline: "Technology Used for this Project",
-        p:[
-          "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
-        ]
-      }
-    ]
+    headline: "Granted United States Patents",
   }
 }

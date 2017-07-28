@@ -23,6 +23,14 @@ export default class Home extends Component {
             <div>
               React | Rails | Sass | JS | Ruby | Python
             </div>
+            <div>
+              <a href="https://docs.google.com/document/d/1IiaVlx7UjyjHn_jQ7O5bgvkbSAmvZ6S6N1-NI0xZGR4/edit?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-flat">
+                Click here for Resume
+              </a>
+            </div>
           </div>
         </div>
         <div className="row flex-center">
