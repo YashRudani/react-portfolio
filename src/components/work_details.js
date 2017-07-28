@@ -39,6 +39,19 @@ export default class WorkDetails extends Component {
     });
   }
 
+  renderLinks(project) {
+    return _.map(project.links, link => {
+      return (
+        <a  href={link.link}
+            target="_blank"
+            key={link.link}
+            rel="noopener noreferrer">
+          {link.linkName}
+        </a>
+      );
+    });
+  }
+
   render() {
     const { project } = this.props;
     let images = {}
@@ -49,11 +62,7 @@ export default class WorkDetails extends Component {
     return (
       <section id={this.props.name}>
         <h5>{project.headline}</h5>
-        <a  href={project.link}
-            target="_blank"
-            rel="noopener noreferrer">
-          {project.link}
-        </a>
+        {this.renderLinks(project)}
         {this.renderSections(project)}
         {isOpen &&
           <Lightbox
