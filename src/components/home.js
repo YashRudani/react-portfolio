@@ -43,21 +43,13 @@ export default class Home extends Component {
               A highly technical and business-minded innovator with a hybrid background
               in aerospace manufacturing and web development. I am known for providing
               simple solutions to complex problems and elevating the performance of others.
-              My projects have ranged from designing 3D printed equipment modifications to
-              machining carbon fiber to building this website.
+              My projects have ranged from the building websites to designing
+              3D printed equipment modifications to machining carbon fiber.
             </p>
           </div>
         </div>
         <div className="row">
           <div className="col s12">
-            <p>
-              <strong>Send me a message</strong>:<br />I am currently looking for a role as
-              a Full-Stack Web Developer or Product Manager. I am also open to slight
-              deviations from these roles. Please, explore my portfolio/resume and
-              reach out if you think that I would be a good fit at your company.
-              Alternatively, send me a message if you just want to talk about my work or
-              yours. I am always interested in conversation about technology.
-            </p>
             <p>
               I was formerly employed in a multi-functional role by Boeing Research &
               Technology. We designed and developed cutting edge manufacturing technology for
@@ -66,9 +58,22 @@ export default class Home extends Component {
               full-stack web developer. These have all contributed to my diverse
               skillset but I am still constantly expanding my repertoire.
             </p>
-            <h3>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col s12">
+            <h5>Send me a message</h5>
+            <p>
+              I am currently looking for a roles as
+              a Full-Stack Web Developer, Front-End Developer, or Product Manager. I am also open to slight
+              deviations from these roles. Please, explore my portfolio/resume and
+              reach out if you think that I would be a good fit at your company.
+              Alternatively, send me a message if you just want to talk about my work or
+              yours. I am always interested in conversation about technology.
+            </p>
+            <h5>
               Contact
-            </h3>
+            </h5>
             <p>
               davisk4rpi@gmail.com
             </p>
