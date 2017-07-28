@@ -3602,9 +3602,9 @@ a {
 .z-depth-5 {
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3); }
 
-.hoverable, .dropdown-menu ul li, #work-header .btn-flat {
+.hoverable, .dropdown-menu ul li, #work-header .btn-flat, .work-link {
   transition: box-shadow .25s; }
-  .hoverable:hover, .dropdown-menu ul li:hover, #work-header .btn-flat:hover {
+  .hoverable:hover, .dropdown-menu ul li:hover, #work-header .btn-flat:hover, .work-link:hover {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
 
 .divider {
@@ -8644,6 +8644,10 @@ nav {
     display: flex;
     align-items: center; } }
 
+.work-link {
+  display: inline-block;
+  padding: 5px; }
+
 .work-img {
   max-height: 200px;
   max-width: 100%;
@@ -8654,3 +8658,12 @@ nav {
 #Ruby-Logo {
   max-height: 150px;
   margin: auto; }
+
+#React-Logo {
+  animation: App-logo-spin infinite 20s linear; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }

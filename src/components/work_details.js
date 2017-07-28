@@ -42,12 +42,14 @@ export default class WorkDetails extends Component {
   renderLinks(project) {
     return _.map(project.links, link => {
       return (
-        <a  href={link.link}
-            target="_blank"
-            key={link.link}
-            rel="noopener noreferrer">
-          {link.linkName}
-        </a>
+        <div key={link.link}>
+          <a  href={link.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="work-link">
+            {link.linkName}
+          </a>
+        </div>
       );
     });
   }

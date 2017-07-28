@@ -208,6 +208,12 @@ nav {
   }
 }
 
+.work-link {
+  display: inline-block;
+  padding:5px;
+  @extend .hoverable;
+}
+
 .work-img {
   max-height: 200px;
   max-width: 100%;
@@ -219,4 +225,13 @@ nav {
 #Ruby-Logo {
   max-height: 150px;
   margin: auto;
+}
+
+#React-Logo {
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
