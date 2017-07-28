@@ -8,28 +8,34 @@ import mastermind from '../../assets/img/work/ruby/mastermind.png';
 import ruby from '../../assets/img/work/ruby/ruby.png';
 
 export const railsPage = {
+  rootPath: "rails",
   title: "Ruby on Rails",
   subtitle: "Freelance Full-Stack Web Development and Product Management",
   buttons: [
     {
       name: "Zuzek & Company",
-      path: "/rails/znc"
+      path: "znc"
     },
     {
       name: "Old Portfolio",
-      path: "/rails/portfolio"
+      path: "portfolio"
     },
     {
       name: "Pure Ruby",
-      path: "/rails/ruby"
+      path: "ruby"
     }
   ]
 }
 
 export const railsProjects = {
-  znc:  {
+  "znc":  {
     headline: "Zuzek & Company (ZNC) Website",
-    link: "http://www.zuzekandco.com/",
+    links: [
+      {
+        link: "http://www.zuzekandco.com/",
+        linkName: "Check out the live website"
+      }
+    ],
     sections: [
       {
         image: {
@@ -37,7 +43,9 @@ export const railsProjects = {
           file: zncLogo
         },
         headline: "Introduction",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        p:[
+          "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        ]
       },
       {
         image: {
@@ -45,13 +53,20 @@ export const railsProjects = {
           file: zncSite
         },
         headline: "Technology Used for this Project",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        p: [
+          "Ruby on Rails, Postgres, ActionDispatch, Instagram API, Figaro, Heroku, Materialize-CSS, Sass, Ahoy Matey, Devise, Spree Commerce"
+        ]
       }
     ]
   },
-  portfolio:  {
+  "portfolio":  {
     headline: "My Previous Portfolio Site",
-    link: "http://www.zuzekandco.com/",
+    links: [
+      {
+        link: "http://www.zuzekandco.com/",
+        linkName: "Check out the live website"
+      }
+    ],
     sections: [
       {
         image: {
@@ -59,7 +74,9 @@ export const railsProjects = {
           file: rails
         },
         headline: "Introduction",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        p:[
+          "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        ]
       },
       {
         image: {
@@ -67,13 +84,20 @@ export const railsProjects = {
           file: oldPortfolio
         },
         headline: "Technology Used for this Project",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        p:[
+          "Ruby on Rails, Materailize-CSS, Heroku, Sass"
+        ]
       }
     ]
   },
-  ruby:  {
+  "ruby":  {
     headline: "Pure Ruby Algorithms & Games",
-    link: "http://www.zuzekandco.com/",
+    links: [
+      {
+        link: "https://github.com/davisk4rpi",
+        linkName: "Checkout my GitHub profile to see some code"
+      }
+    ],
     sections: [
       {
         image: {
@@ -81,7 +105,10 @@ export const railsProjects = {
           file: ruby
         },
         headline: "Background",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        p:[
+          "I began my journey to become a web developer with Python. But, by scouring the web for learning resources, I came across The Odin Project.",
+          "At first, I merely switched to Ruby because of The Odin Project's fantastically deep and diverse coursework, but I quickly developed a fondness for the language. Ruby has been my general-purpose language of choice since."
+        ]
       },
       {
         image: {
@@ -89,7 +116,10 @@ export const railsProjects = {
           file: chess
         },
         headline: "Chess",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        p:[
+          "My most complex pure Ruby project is a command line version of Chess. This particular project demonstrates much of what I can do with pure Ruby.",
+          "Object-Oriented Programing, Modularization of Code, Object Inheritance, Test-Driven Development, Serialization (For Saving Games), Recursion (Determining Check/Checkmate)"
+        ]
       },
       {
         image: {
@@ -97,7 +127,9 @@ export const railsProjects = {
           file: connectFour
         },
         headline: "Connect Four",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        p:[
+          "Although it's simpler game than chess, Connect Four was another useful project. For this project, there was a focus on Test-Driven Development and Object-Oriented Programing. Both Chess and Connect Four allowed me to work with complex data structures to determine win conditions.",
+        ]
       },
       {
         image: {
@@ -105,7 +137,9 @@ export const railsProjects = {
           file: mastermind
         },
         headline: "Mastermind",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        p:[
+          "One of my simpler Ruby projects was to create a command line version of Mastermind. For this project, there was a focus on Object-Oriented Programming. I also created a weak AI to play with."
+        ]
       }
     ]
   }

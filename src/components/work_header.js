@@ -5,11 +5,12 @@ import { NavLink } from 'react-router-dom';
 export default class ReactPage extends Component {
 
   renderButtons(){
+    const root = this.props.details.rootPath
     const buttonInfo = this.props.details.buttons;
     return _.map(buttonInfo, btn => {
       return (
         <NavLink
-          to={btn.path}
+          to={`/${root}/${btn.path}`}
           activeClassName="active-btn"
           key={btn.name}
           className="btn-flat">

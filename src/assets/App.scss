@@ -189,6 +189,25 @@ nav {
   }
 }
 
+#work-page {
+  @media #{$large-and-up} {
+    p {
+      font-size: 22px;
+    }
+  }
+  @media #{$medium-and-down} {
+    p {
+      font-size: 16px;
+    }
+  }
+  @media #{$medium-and-up}{
+    .flex-center {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
 .work-img {
   max-height: 200px;
   max-width: 100%;

@@ -8631,6 +8631,19 @@ nav {
   -webkit-box-shadow: inset 0px 2px 6px #ccc, inset 2px 0px 6px #ccc;
   box-shadow: inset 0px 2px 6px #ccc, inset 2px 0px 6px #ccc; }
 
+@media only screen and (min-width: 993px) {
+  #work-page p {
+    font-size: 22px; } }
+
+@media only screen and (max-width: 992px) {
+  #work-page p {
+    font-size: 16px; } }
+
+@media only screen and (min-width: 601px) {
+  #work-page .flex-center {
+    display: flex;
+    align-items: center; } }
+
 .work-img {
   max-height: 200px;
   max-width: 100%;

@@ -19,15 +19,20 @@ export default class WorkDetails extends Component {
   }
 
   renderSections(project) {
+    let count = 0;
     return _.map(project.sections, section => {
+      let paragraphs = _.map(section.p, p => {
+        count += 1;
+        return (<p key={count}>{p}</p>);
+      });
       return (
         <div className="row flex-center" key={section.image.fileName}>
           <div className="col s8 offset-s2 m4">
             <img src={section.image.file} id={section.image.fileName} alt={section.image.fileName} className="work-img" onClick={() => this.pickLightbox(section.image.fileName)}/>
           </div>
           <div className="col s12 m8">
-            <h6>{section.headline}</h6>
-            <p>{section.p}</p>
+            <h5>{section.headline}</h5>
+            {paragraphs}
           </div>
         </div>
       );

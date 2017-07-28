@@ -2,28 +2,34 @@ import zncLogo from '../../assets/img/work/znc-logo.png';
 import zncSite from '../../assets/img/work/znc-website.png';
 
 export const manufacturingPage = {
+  rootPath: "manufacturing",
   title: "Composites Manufactuing",
   subtitle: "Leading Edge Composite Fabrication Technology Development",
   buttons: [
     {
       name: "Python Experimentation",
-      path: "/manufacturing/python"
+      path: "python"
     },
     {
       name: "Composites",
-      path: "/manufacturing/composites"
+      path: "composites"
     },
     {
       name: "Patents & Innovation",
-      path: "/manufacturing/patents"
+      path: "patents"
     }
   ]
 }
 
-export const railsProjects = {
-  znc:  {
+export const manufacturingProjects = {
+  "python":  {
     headline: "Zuzek & Company (ZNC) Website",
-    link: "http://www.zuzekandco.com/",
+    links: [
+      {
+        link: "http://www.zuzekandco.com/",
+        linkName: "Check out the live website"
+      }
+    ],
     sections: [
       {
         image: {
@@ -31,7 +37,9 @@ export const railsProjects = {
           file: zncLogo
         },
         headline: "Introduction",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        p:[
+
+        ]
       },
       {
         image: {
@@ -39,13 +47,20 @@ export const railsProjects = {
           file: zncSite
         },
         headline: "Technology Used for this Project",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        p:[
+
+        ]
       }
     ]
   },
-  portfolio:  {
+  "composites":  {
     headline: "My Previous Portfolio Site",
-    link: "http://www.zuzekandco.com/",
+    links: [
+      {
+        link: "http://www.zuzekandco.com/",
+        linkName: "Check out the live website"
+      }
+    ],
     sections: [
       {
         image: {
@@ -53,7 +68,9 @@ export const railsProjects = {
           file: zncLogo
         },
         headline: "Introduction",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        p:[
+          "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        ]
       },
       {
         image: {
@@ -61,13 +78,20 @@ export const railsProjects = {
           file: zncSite
         },
         headline: "Technology Used for this Project",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        p:[
+          "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        ]
       }
     ]
   },
-  ruby:  {
+  "patents":  {
     headline: "Pure Ruby Algorithms & Games",
-    link: "http://www.zuzekandco.com/",
+    links: [
+      {
+        link: "http://www.zuzekandco.com/",
+        linkName: "Check out the live website"
+      }
+    ],
     sections: [
       {
         image: {
@@ -75,7 +99,9 @@ export const railsProjects = {
           file: zncLogo
         },
         headline: "Introduction",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        p:[
+          "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        ]
       },
       {
         image: {
@@ -83,7 +109,9 @@ export const railsProjects = {
           file: zncSite
         },
         headline: "Technology Used for this Project",
-        p: "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        p:[
+          "In February 2017 I was contacted by the founders of Zuzek & Company and asked to build them a website. Since then I have built them a company website from the ground up. I took on the role of Lead Developer and Product Manager and continue to support this project. As the product owner, I have been involved any every step of the build process: Design, Content Writing, Back-End & Front-End Development, Testing, and Project Management."
+        ]
       }
     ]
   }
