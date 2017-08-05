@@ -213,6 +213,25 @@ nav {
   }
 }
 
+.work-details-enter {
+  opacity: 0;
+}
+.work-details-enter.work-details-enter-active {
+  opacity: 1;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.work-details-leave {
+  opacity: 1;
+}
+.work-details-leave-active {
+  opacity: 0.01;
+  -webkit-transition: all .25s ease-out;
+  transition: all .25s ease-out;
+}
+
+
 .work-link {
   display: inline-block;
   padding:5px;

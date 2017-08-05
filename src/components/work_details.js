@@ -2,6 +2,7 @@ import _ from 'lodash';
 import React, { Component } from 'react';
 import Lightbox from 'react-image-lightbox';
 
+
 export default class WorkDetails extends Component {
   constructor(props) {
     super(props);
@@ -62,16 +63,18 @@ export default class WorkDetails extends Component {
     });
     let { isOpen, currentImg } = this.state;
     return (
-      <section id={this.props.name}>
-        <h5>{project.headline}</h5>
-        {this.renderLinks(project)}
-        {this.renderSections(project)}
-        {isOpen &&
-          <Lightbox
-            mainSrc={images[currentImg]}
-            onCloseRequest={() => this.setState({ isOpen: false })}/>
-          }
-      </section>
+
+        <section id={this.props.name}>
+          <h5>{project.headline}</h5>
+          {this.renderLinks(project)}
+          {this.renderSections(project)}
+          {isOpen &&
+            <Lightbox
+              mainSrc={images[currentImg]}
+              onCloseRequest={() => this.setState({ isOpen: false })}/>
+            }
+        </section>
+
     );
   }
 }
