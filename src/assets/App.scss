@@ -52,6 +52,14 @@ nav {
   font-weight: 500;
 }
 
+
+.social-media {
+  display: inline-block;
+  width: 36px;
+  border-radius: 5px;
+  margin: auto 8px;
+}
+
 // Navigation
 #header {
   .brand-logo {
@@ -61,13 +69,6 @@ nav {
       font-size: 1.5rem;
       margin-top: -5px;
     }
-  }
-
-  .social-media {
-    display: inline-block;
-    width: 36px;
-    border-radius: 5px;
-    margin: auto 8px;
   }
 
   .nav-wrapper {
@@ -89,6 +90,23 @@ nav {
     .material-icons.md-36 {
       color: $background-color-light;
     }
+  }
+}
+
+// Footer
+#footer.page-footer {
+  color: darken($secondary-color, 10%);
+  a:hover {
+    h6 {
+      color: darken($secondary-color, 10%);
+    }
+  }
+  background-color: $background-color-dark;
+  li, a {
+    display: inline-block;
+  }
+  .social-media {
+    margin: 8px;
   }
 }
 
@@ -174,6 +192,13 @@ nav {
     color: $secondary-color-dark;
     margin: 5px;
     @extend .hoverable;
+  }
+}
+
+.email-link {
+  color: $primary-color-dark;
+  &:hover {
+    color: $primary-color;
   }
 }
 

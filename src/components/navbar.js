@@ -50,7 +50,7 @@ class Navbar extends Component {
                             target="_blank"
                             rel="noopener noreferrer"
                             className="">
-                         <img src={linkedinIcon} alt="LinkedIn" className="social-media" />
+                         <img src={githubIcon} alt="GitHub" className="social-media" />
                        </a>
                      </li>
                      <li>
@@ -58,7 +58,7 @@ class Navbar extends Component {
                           target="_blank"
                           rel="noopener noreferrer"
                           className="">
-                        <img src={githubIcon} alt="GitHub" className="social-media"/>
+                        <img src={linkedinIcon} alt="LinkedIn" className="social-media"/>
                        </a>
                      </li>
                    </ul>

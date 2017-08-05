@@ -74,9 +74,9 @@ export default class Home extends Component {
             <h5>
               Contact
             </h5>
-            <p>
+            <a href="mailto:davisk4rpi@gmail.com" className="email-link">
               davisk4rpi@gmail.com
-            </p>
+            </a>
           </div>
         </div>
       </section>

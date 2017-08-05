@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 import Navbar from './components/navbar';
+import Footer from './components/footer';
 import Home from './components/home';
 import { reactPage } from './components/data/react-page';
 import { railsPage } from './components/data/rails-page';
@@ -45,6 +46,7 @@ class App extends Component {
               <Route exact path='/' component={Home} />
             </Switch>
           </div>
+          <Footer />
         </div>
       </BrowserRouter>
     );
